@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font: 'Poppins', sans-serif;
+  --color-title: #6C63FF;
+  --color-temp: #C8C8C8;
+  --color-number: #4D4C59;
+  --color-p: #9C9AB6;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: var(--font);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.top-wave, .bottom-wave {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.top-wave {
+  top: 0;
+}
+
+.bottom-wave {
+  bottom: 0;
+}
+
+.content {
+  max-width: 1180px;
+
+  display: flex;
+  align-items: center;
+  gap: 8.2rem;
+  
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-title {
+  font-size: 3.6rem;
+  letter-spacing: 10.5%;
+  color: var(--color-title);
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: var(--color-p);
+  margin: 4.6rem 0 3.1rem;
+
+}
+
+.button {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-title);
+  border-radius: 1.0rem;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.timer {
+  display: flex;
+  text-align: center;
+}
+
+.timer-label {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-temp);
+}
+
+.time-value, .timer-separator {
+  font-size: 7.2rem;
+  font-weight: 400;
+  color: var(--color-number);
+
+}
+
+.timer-separator {
+  margin: 0 1.2rem;
+  transform: translateY(2rem); /* ou margin-top: 2rem;*/
+  
+}
