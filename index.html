@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <title>Discover Countdown</title>
 </head>
 <body>
@@ -23,37 +23,37 @@
 
       <h1 class="countdown-title">Ready to launch in...</h1>
 
-      <div class="timer">
+      <div class="timer" id="timer">
         <div class="days">
           <span class="timer-label">Dias</span>
-          <p class="time-value">08</p>
+          <p class="time-value" id="daysLeft">08</p>
         </div>
 
         <p class="timer-separator">:</p>
 
         <div class="hours">
           <span class="timer-label">Horas</span>
-          <p class="time-value">12</p>
+          <p class="time-value" id="hoursLeft">12</p>
         </div>
 
         <p class="timer-separator">:</p>
 
         <div class="minutes">
           <span class="timer-label">Minutos</span>
-          <p class="time-value">44</p>
+          <p class="time-value" id="minutesLeft">44</p>
         </div>
 
         <p class="timer-separator">:</p>
 
         <div class="seconds">
           <span class="timer-label">Segundos</span>
-          <p class="time-value">28</p>
+          <p class="time-value" id="secondsLeft">28</p>
         </div>
 
 
       </div>
 
-      <p class="description">Inscreva-se para saber mais sobre o lançamento</p>
+      <span class="description">Inscreva-se para saber mais sobre o lançamento</span>
 
       <button class="button">Inscreva-se</button>
 
