@@ -1,6 +1,6 @@
 (function() {
 
-  const countdownDate = new Date("Aug 2, 2023 11:08:00")
+  const countdownDate = new Date("Aug 13, 2023 16:00:00")
 
 
 
@@ -23,7 +23,7 @@
 
 
 
-      var distance = countdownDate.getTimer() - today.getTimer();
+      var distance = countdownDate.getTime() - today.getTime();
 
 
       
