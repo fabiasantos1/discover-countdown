@@ -1,6 +1,6 @@
 (function() {
 
-  const countdownDate = new Date("Aug 15, 2023 23:00:00")
+  const countdownDate = new Date("Aug 13, 2023 17:10:00")
 
 
 
@@ -53,7 +53,7 @@
 
         clearInterval(timer)
 
-        document.getElementById("countdwn-title").innerHTML = "Mission Accomplished"
+        document.getElementById("countdown-title").innerHTML = "Mission Accomplished"
 
         document.getElementById('timer').innerHTML = '<h2 style="text-align: center; width: 100%">Rocket has been launched! 🚀</h2>'
       } 
