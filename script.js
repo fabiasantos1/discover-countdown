@@ -1,6 +1,6 @@
 (function() {
 
-  const countdownDate = new Date("Aug 31, 2023 17:10:00")
+  const countdownDate = new Date("Aug 31, 2025 17:10:00")
 
 
 
